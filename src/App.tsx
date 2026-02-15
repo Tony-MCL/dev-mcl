@@ -32,7 +32,7 @@ const App: React.FC = () => {
 
           {/* Produkter */}
           <Route path="/progress" element={<ProgressPage />} />
-          <Route path="/husket" element={<HusketPage />} />
+          <Route path="/husk-et" element={<HusketPage />} />
 
           {/* Legal */}
           <Route path="/kjopsvilkar" element={<KjopsvilkarPage />} />
