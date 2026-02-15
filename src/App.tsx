@@ -10,11 +10,11 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import IdeaBankPage from "./pages/IdeaBankPage";
 import ProgressPage from "./pages/ProgressPage";
+import HusketPage from "./pages/HusketPage";
 
 import KjopsvilkarPage from "./pages/KjopsvilkarPage";
 import BrukervilkarPage from "./pages/BrukervilkarPage";
 import PersonvernPage from "./pages/PersonvernPage";
-import RefusjonPage from "./pages/RefusjonPage"
 
 const App: React.FC = () => {
   return (
@@ -30,14 +30,15 @@ const App: React.FC = () => {
           <Route path="/kontakt" element={<ContactPage />} />
           <Route path="/idebank" element={<IdeaBankPage />} />
 
-          {/* Dummy Progress info-side (ingen checkout) */}
+          {/* Produkter */}
           <Route path="/progress" element={<ProgressPage />} />
+          <Route path="/husket" element={<HusketPage />} />
 
-          {/* Legal (kan beholdes) */}
+          {/* Legal */}
           <Route path="/kjopsvilkar" element={<KjopsvilkarPage />} />
           <Route path="/brukervilkar" element={<BrukervilkarPage />} />
           <Route path="/personvern" element={<PersonvernPage />} />
-          <Route path="/refusjon" element={<RefusjonPage />} />
+
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>
