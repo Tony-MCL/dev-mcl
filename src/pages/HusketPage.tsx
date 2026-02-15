@@ -47,49 +47,51 @@ const HusketPage: React.FC = () => {
         <div
           className="intro-card"
           style={{
-            maxWidth: 720,
+            maxWidth: 520,
             padding: "1rem",
             overflow: "hidden",
           }}
         >
-          {/* MP4 (best), med GIF fallback */}
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              borderRadius: "12px",
-              border: "1px solid var(--mcl-border)",
-              background: "rgba(0,0,0,0.04)",
-            }}
-            onError={(e) => {
-              // Hvis mp4 mangler/feiler: skjul video og vis gif-bildet under.
-              (e.currentTarget as HTMLVideoElement).style.display = "none";
-              const fallback = document.getElementById("husket-teaser-fallback");
-              if (fallback) fallback.style.display = "block";
-            }}
-          >
-            <source src={teaserMp4} type="video/mp4" />
-          </video>
+          {/* Liten teaser, sentrert */}
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              style={{
+                width: "160px",
+                height: "auto",
+                display: "block",
+                borderRadius: "14px",
+                border: "1px solid var(--mcl-border)",
+                background: "rgba(0,0,0,0.04)",
+              }}
+              onError={(e) => {
+                // Hvis mp4 mangler/feiler: skjul video og vis gif-bildet under.
+                (e.currentTarget as HTMLVideoElement).style.display = "none";
+                const fallback = document.getElementById("husket-teaser-fallback");
+                if (fallback) fallback.style.display = "block";
+              }}
+            >
+              <source src={teaserMp4} type="video/mp4" />
+            </video>
 
-          <img
-            id="husket-teaser-fallback"
-            src={teaserGif}
-            alt={t("husket.teaser.alt")}
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "none",
-              borderRadius: "12px",
-              border: "1px solid var(--mcl-border)",
-              background: "rgba(0,0,0,0.04)",
-            }}
-          />
+            <img
+              id="husket-teaser-fallback"
+              src={teaserGif}
+              alt={t("husket.teaser.alt")}
+              style={{
+                width: "160px",
+                height: "auto",
+                display: "none",
+                borderRadius: "14px",
+                border: "1px solid var(--mcl-border)",
+                background: "rgba(0,0,0,0.04)",
+              }}
+            />
+          </div>
         </div>
       </section>
 
