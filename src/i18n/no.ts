@@ -64,7 +64,7 @@ const no = {
       husket: {
         title: "husk'et",
         body:
-          "Et bilde alene er ikke et minne. husk'et er en rolig måte å lagre øyeblikk på – med kontekst som gjør at du faktisk husker: vurdering, kategori og en kort kommentar.",
+          "Et minne er mer enn et bilde. husk'et gir deg et personlig og kontrollert rom for øyeblikkene du vil bevare – med egne ord og egne vurderinger, for deg selv.",
         cta: "Se husk'et →",
       },
 
@@ -114,48 +114,53 @@ const no = {
   husket: {
     hero: {
       title: "husk'et",
-      tagline: "Et bilde alene er ikke et minne.",
+      tagline: "Et minne er mer enn et bilde.",
       sub:
-        "husk'et er en rolig måte å lagre øyeblikk på – med det lille ekstra som gjør at du faktisk husker: vurdering, kategori, kommentar – og (valgfritt) sted.",
+        "husk'et er en personlig og kontrollert måte å bevare øyeblikk på. Ikke for publisering. Ikke for respons. Bare et sted for det du vil huske – med dine ord og dine vurderinger.",
       contactCta: "Vil du ha beskjed ved lansering? Ta kontakt →",
     },
-
+  
     badge: "Kommer snart",
-
-    teaser: {
-      title: "En liten teaser",
-      body:
-        "Et lite hint om hva som kommer – uten støy, uten feed, og uten mas.",
-      alt: "husk'et teaser-animasjon",
-    },
-
+  
     sections: {
+      origin: { title: "Hvordan husk'et ble til" },
       what: { title: "Hva husk'et er" },
       status: {
         title: "Status",
         body:
-          "husk'et er under bygging. Denne siden fungerer som landingsside for tidlig interesse. Når appen er lansert, kommer det tydelige knapper her for App Store og Google Play.",
+          "husk'et er under utvikling. Denne siden fungerer som landingsside for tidlig interesse. Når appen er lansert, kommer det tydelige knapper her for App Store og Google Play.",
       },
     },
-
+  
+    origin: {
+      p1:
+        "Noen ganger vet man at et minne finnes – men ikke hvor. Man husker øyeblikket, men ikke detaljene. Bildet er lagret, men konteksten er borte.",
+      p2:
+        "Deling på sosiale medier kan være en fin måte å ta vare på minner på. I vårt hjem brukes påminnelser derfra aktivt, og de gir glede. Men ikke alle minner trenger å deles.",
+      p3:
+        "husk'et ble til av ønsket om et personlig og kontrollert rom for de øyeblikkene man vil bevare – med egne ord og egne vurderinger, for deg selv.",
+    },
+  
     cards: {
       moreThanPhoto: {
         title: "Mer enn et bilde",
         body:
-          "Et bilde alene sier ofte lite senere. Legg ved en følelse, en rating eller en kort kommentar – og finn det igjen når det betyr noe.",
+          "Et bilde alene sier ofte mindre enn vi tror. Legg til en kort kommentar, en vurdering eller en kategori – og finn det igjen med mening senere.",
       },
-      calmControl: {
-        title: "Ro og kontroll",
+  
+      personal: {
+        title: "Personlig",
         body:
-          "Ikke en sosial feed. Ikke et mas. Bare en privat samling – bygget for å føles ryddig, trygg og enkel å bruke.",
+          "Ikke en feed. Ikke et publikum. Bare dine minner, lagret på en måte som gjør dem tilgjengelige når du faktisk trenger dem.",
       },
-      everyday: {
-        title: "Bygget for hverdagen",
+  
+      controlled: {
+        title: "Kontrollert",
         body:
-          "Lav terskel. Raskt å lagre. Enkelt å finne igjen. laget for virkelige øyeblikk – ikke for organisering som eget prosjekt.",
+          "Du bestemmer hva som lagres, hvordan det beskrives og hva det betyr. Ingen algoritmer, ingen forventninger – bare struktur du eier selv.",
       },
     },
-
+  
     backCta: "← Tilbake til Morning Coffee Labs",
   },
 
