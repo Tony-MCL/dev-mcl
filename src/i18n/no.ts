@@ -145,16 +145,16 @@ const no = {
       moreThanPhoto: {
         title: "Mer enn et bilde",
         body:
-          "Et bilde alene sier ofte mindre enn vi tror. Legg til en kort kommentar, en vurdering eller en kategori – og finn det igjen med mening senere.",
+          "Et bilde sier mer enn tusen ord. Alikevel kan et bilde komme til kort. Legg til en kort kommentar, en vurdering eller en kategori – og finn det igjen med mening senere.",
       },
   
-      personal: {
+      everyday: {
         title: "Personlig",
         body:
           "Ikke en feed. Ikke et publikum. Bare dine minner, lagret på en måte som gjør dem tilgjengelige når du faktisk trenger dem.",
       },
   
-      controlled: {
+      calmControl: {
         title: "Kontrollert",
         body:
           "Du bestemmer hva som lagres, hvordan det beskrives og hva det betyr. Ingen algoritmer, ingen forventninger – bare struktur du eier selv.",
